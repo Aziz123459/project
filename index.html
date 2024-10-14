@@ -8,9 +8,10 @@
 </head>
 <body>
     <div class="container">
-        <div class="menu">
-            <img src="./images/menu-icon.png" alt="menu">
-            <ul>
+        
+        <div class="menu" id="mymenu" onmouseover="openmenu('mymenu')" onmouseout="closemenu('mymenu')">
+            <img src="./assets/menu-icon.png" alt="menu"  >
+            <ul id="list" >
                 <li>About me</li>
                 <li>My skills</li>
                 <li>My project</li>
@@ -18,5 +19,6 @@
             </ul>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
