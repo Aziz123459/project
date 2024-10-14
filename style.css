@@ -114,3 +114,13 @@
     align-items: center;
     gap: 10px;
 }
+.Projectsmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.rows{
+    display: flex;
+    justify-content: ;
+}
