@@ -17,5 +17,21 @@
     width: 30px;
 }
 .logo{
-    width: 100px;
+    width: 150px;
+}
+.aboutme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding-top: 15px;
+}
+.aboutme p{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    height:px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #B1B1B1;
 }
