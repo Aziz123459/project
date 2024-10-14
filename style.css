@@ -1,4 +1,46 @@
 *{
+<<<<<<< HEAD
+    margin:0;
+    padding: 0;
+    font-family:sans-serif ;
+}
+
+img{
+    width: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.menu{
+    height: 100%; /* 100% Full-height */ /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    background-color:lightgray;
+    width: 0;
+    top: 0; /* Stay at the top */
+    left: 0; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; 
+}
+.menu ul{
+    padding: 8px 8px 8px 32px;
+    list-style: none;
+    background-color:lightgray;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.menu img{
+    width: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    position: fixed;
+}
+=======
     margin: 0;
     padding: 0;
 }
@@ -114,6 +156,7 @@
     align-items: center;
     gap: 10px;
 }
+<<<<<<< HEAD
 .Projectsmain{
     display: flex;
     justify-content: center;
@@ -124,3 +167,6 @@
     display: flex;
     justify-content: ;
 }
+=======
+>>>>>>> 16635ee5a619604d0a216a646c735cbeed809444
+>>>>>>> a75ae72ea2777bf01269e4a4d33e07cdb0c95c21
