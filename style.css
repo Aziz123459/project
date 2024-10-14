@@ -1,5 +1,4 @@
 *{
-<<<<<<< HEAD
     margin:0;
     padding: 0;
     font-family:sans-serif ;
@@ -39,10 +38,6 @@ img{
     margin-left: 10px;
     margin-bottom: 10px;
     position: fixed;
-}
-=======
-    margin: 0;
-    padding: 0;
 }
 .navbar{
     display: flex;
@@ -156,17 +151,32 @@ img{
     align-items: center;
     gap: 10px;
 }
-<<<<<<< HEAD
+.MyProjects{
+    margin-top: 30px;
+}
+.MyProjects h1 , h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
 .Projectsmain{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 30px;
+    padding-top: 15px;
 }
 .rows{
     display: flex;
-    justify-content: ;
+    gap: 100px;
 }
-=======
->>>>>>> 16635ee5a619604d0a216a646c735cbeed809444
->>>>>>> a75ae72ea2777bf01269e4a4d33e07cdb0c95c21
+.rows img{
+    width: 400px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
