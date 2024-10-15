@@ -1,8 +1,10 @@
 *{
-<<<<<<< HEAD
     margin:0;
     padding: 0;
     font-family:sans-serif ;
+}
+html{
+    scroll-behavior: smooth;
 }
 
 img{
@@ -11,14 +13,14 @@ img{
     margin-bottom: 10px;
 }
 .menu{
-    height: 100%; /* 100% Full-height */ /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
+    height: 100%; 
+    position: fixed; 
     background-color:lightgray;
     width: 0;
-    top: 0; /* Stay at the top */
-    left: 0; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
+    top: 0; 
+    left: 0; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
     transition: 0.5s; 
 }
 .menu ul{
@@ -32,7 +34,11 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
+    gap: 60px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
 }
 .menu img{
     width: 20px;
@@ -40,9 +46,50 @@ img{
     margin-bottom: 10px;
     position: fixed;
 }
-=======
-    margin: 0;
-    padding: 0;
+.profiel{
+    background-image: url("./assets/v1016-a-09.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    height: 700px; 
+}   
+.prf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    color:black;
+}
+.prj{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.prj img{
+    height: 500px;
+    width: 600px;
+    border-radius: 50%;
+    margin-left: 50px;
+    
+}
+.featured{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: medium;
+    margin: 70px 20px 0px 20px;
+    padding: 50px;
+}
+.prj h3{
+    color: black;
+
+}
+.prj h4{
+    background-color: lightgray;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: large;
 }
 .navbar{
     display: flex;
@@ -156,7 +203,7 @@ img{
     align-items: center;
     gap: 10px;
 }
-<<<<<<< HEAD
+
 .Projectsmain{
     display: flex;
     justify-content: center;
@@ -165,8 +212,5 @@ img{
 }
 .rows{
     display: flex;
-    justify-content: ;
+    
 }
-=======
->>>>>>> 16635ee5a619604d0a216a646c735cbeed809444
->>>>>>> a75ae72ea2777bf01269e4a4d33e07cdb0c95c21

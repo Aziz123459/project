@@ -8,15 +8,6 @@
 </head>
 <body>
     <div class="container">
-        <div class="menu" id="mymenu" onmouseover="openmenu('mymenu')" onmouseout="closemenu('mymenu')">
-            <img src="./assets/menu-icon.png" alt="menu"  >
-            <ul id="list" >
-                <li>About me</li>
-                <li>My skills</li>
-                <li>My project</li>
-                <li>my clients</li>
-            </ul>
-        </div>
         <div class="navbar">
             <div class="leftnavbar">
                 <img src="./assets/mail_icon.png" alt="mail">
@@ -29,14 +20,49 @@
                 <img src="./assets/lightmode_icon.png" alt="lightmode">
             </div>
         </div>
+        <div class="menu" id="mymenu" onmouseover="openmenu('mymenu')" onmouseout="closemenu('mymenu')">
+            <img src="./assets/menu-icon.png" alt="menu"  >
+            <ul id="list" >
+                <li><a href="#section1">About me</a></li>
+                <li><a href="#section2">My skills</a></li>
+                <li><a href="#section3">My project</a></li>
+                <li><a href="#section4">my clients</a></li>
+                <li><a href="#section5">contact me</a></li>
+            </ul>
+        </div>
+        <div class="profiel">
+            <div class="prf">
+                <h2>HELLO! I'm</h2>
+                <h1>Mohamed Aziz Tounsi</h1>
+                <h2>Full Stack Developer</h2>
+                
+            </div>
+            <div class="prj">
+                <img src="./assets/download.png" alt="">
+                <div class="featured">
+                    <h3>
+                        FEATURED PROJECT
+                    </h3>
+                    <h4>build a "Multi-Tenant SaaS Platform <br>
+                        for Small Business Management." <br>
+                        This project would involve <br>
+                        creating a scalable platform <br> 
+                        where small businesses <br>
+                        can manage various aspects of their operations. <br>
+
+                    </h4>
+                </div>
+            </div>
+            
+        </div>
         <div class="aboutme">
-            <h1>About me</h1>
+            <h1 id="section1">About me</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus facere ea deserunt similique? Libero, doloribus fuga. Dolores unde non corporis enim obcaecati hic expedita <br>quidem accusantium adipisci soluta alias,
                 fuga illum odio exercitationem necessitatibus eveniet delenitibr laborum voluptatum architecto quos rem! Eligendi omnis odit sit, vitae magnam, dolore perspiciatis sint, hic debitis <br> quas fugit. Ipsa illo eaque omnis ab,
                 alias nemo vitae temporibus. Commodi sint eligendi eius doloribus soluta numquam perspiciatis deleniti, excepturi ipsam, odio magnam laudantium <br>adipisci, nostrum architecto?</p>
         </div>
             <div class="myskills">
-                <h1>My Skills</h1>
+                <h1 id="section2">My Skills</h1>
                     <div class="stats">     
                         <div class="label">CSS <span style="float: right;">90%</span></div>
                         <div class="bar-container">
@@ -86,7 +112,7 @@
             </div>
             <div class="MyProjects">
                 <div>    
-                    <h1>My Projects</h1>
+                    <h1 id="section3">My Projects</h1>
                     <h3>Previous Projects</h3>
                 </div>
                 <div class="Projectsmain">
