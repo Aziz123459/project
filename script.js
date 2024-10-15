@@ -6,3 +6,4 @@ function openmenu() {
 function closemenu() {
     document.getElementById("mymenu").style.width = "0";
 }
+
