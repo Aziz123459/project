@@ -151,27 +151,26 @@
                     <h1 id="section4">My Clients</h1>
                     <div class="clients">
                         
-                        <button id="prevImageBtn" disabled>&#10094</button>
+                        <button onclick="previousImg()" >&#10094</button>
                         <img id="image" src="./assets/megapc.webp" alt="Placeholder Image">
                             <br>
-                        <button id="nextImageBtn">&#10095</button>
-                        
-                        
+                        <button onclick="switchImg()">&#10095</button>
                     </div>
-                    
                 </div>
                 <div class="contactme">
                     <h1 id="section5">Contact Me</h1>
-                    <div class="adress">
-                        <div class="name-lastname">
-                            <input class="name" type="text" placeholder="Name">
-                            <input class="lastname" type="text" placeholder="Last Name">
-                        </div>
-                        <input class="emailinput" type="text" placeholder="Email">
-                    </div>
-                    <div class="feedbacksbtn">
-                        <textarea class="feedbacks"  placeholder="FeedBacks"></textarea>
-                        <button onclick="TyForFeedBacks()">Submit</button>
+                    <div class="adress">    
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="hidden" name="access_key" value="8381fee1-79a4-4923-ba8a-12583be214b0">
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Feedback:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button onclick="TyForFeedBacks()" type="submit">Send</button>
+                    </form>
+                    <div id="responseMessage"></div>
                     </div>
                 </div>
             </div>    

@@ -40,22 +40,18 @@ function TyForFeedBacks(){
     alert("Thank You! For Your FeedBacks");
 }
 
-
-
-var imgElement = document.getElementById('image');
-var nextImageBtn = document.getElementById('nextImageBtn');
-var prevImageBtn = document.getElementById('prevImageBtn');
-
-var currentImageSrc = imgElement.src;
-var previousImageSrc = './assets/megapc.webp';
-
-nextImageBtn.addEventListener('click', function() {
-previousImageSrc = currentImageSrc; 
-currentImageSrc = './assets/ba9chich.svg';
-fadeImage(currentImageSrc);
-prevImageBtn.disabled = false; 
-});
-
+var allImg = ['./assets/megapc.webp', './assets/ba9chich.svg','./assets/orange.png','./assets/Mytek.png'];
+var currentIndex = 0;
+function switchImg() {
+    var next = document.getElementById('image');
+    currentIndex = (currentIndex + 1) % allImg.length;
+    next.src = allImg[currentIndex];
+}
+function previousImg() {
+    var next = document.getElementById('image');
+    currentIndex = (currentIndex - 1 + allImg.length) % allImg.length;
+    next.src = allImg[currentIndex];
+}
 
 prevImageBtn.addEventListener('click', function() {
 fadeImage(previousImageSrc);
