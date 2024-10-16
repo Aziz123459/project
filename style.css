@@ -101,6 +101,7 @@ html{
 @keyframes SlideLeft{
     from{transform: translateX(300%);}
 }
+
 .skills img {width: 150px;
 }
 .skills{
@@ -299,7 +300,7 @@ html{
     padding-bottom: 50px;
 }
 .contactme{
-    background-image: url(https://img.freepik.com/free-vector/blue-border-abstract-gradient-background_53876-115744.jpg?t=st=1729002194~exp=1729005794~hmac=579ecb32f06370870ee3bc8f5ffce8184e7021a022749c446d9f906abea2d928&w=1380);
+    /* -image: ubackgroundrl(https://img.freepik.com/free-vector/blue-border-abstract-gradient-background_53876-115744.jpg?t=st=1729002194~exp=1729005794~hmac=579ecb32f06370870ee3bc8f5ffce8184e7021a022749c446d9f906abea2d928&w=1380); */
     background-size: cover;
     padding-bottom: 20px;
 }
@@ -374,3 +375,60 @@ footer a{
     color: white;
     font-size: larger;
 }
+/* light Mode Styles*/
+body {
+    background-color: white;
+    color: black;
+}
+
+.container {
+    background-color: #f4f4f4;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .navbar {
+    background-color: #BB86FC; /* Dark navbar */
+}
+body.dark-mode .featured h4{
+    background-color: #BB86FC;
+    color: #121212;
+}
+body.dark-mode .featured h3,
+body.dark-mode .prf,
+body.dark-mode .aboutme h1,
+body.dark-mode .myskills h1,
+body.dark-mode .MyProjects,
+body.dark-mode .myskills .label,
+body.dark-mode .myclients h1,
+body.dark-mode .contactme h1{
+    color: white;
+}
+body.dark-mode .profiel{
+    background-image: url("./assets/dark.jpg");
+    background-size: cover;
+    padding: 40px;
+}
+body.dark-mode .aboutme,
+body.dark-mode .myskills,
+body.dark-mode .MyProjects,
+body.dark-mode .myclients,
+body.dark-mode .contactme
+{
+    background-color: #1C1F2E;
+}
+body.dark-mode .aboutme p{
+    background-color:#BB86FC;
+}
+body.dark-mode .menu,
+body.dark-mode .menu ul{
+    background-color: black;
+}
+body.dark-mode .menu li a{
+    color: #03DAC6;
+}
+
+
+
+
+
+

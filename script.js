@@ -41,3 +41,19 @@ function TyForFeedBacks(){
     alert("Thank You! For Your FeedBacks");
 
 }
+function toggleDarkMode() {
+    const body = document.body;
+    const darkModeToggle = document.getElementById("darkModeToggle");
+    const lightModeToggle = document.getElementById("lightModeToggle");
+
+    body.classList.toggle("dark-mode");
+
+    
+    if (body.classList.contains("dark-mode")) {
+        darkModeToggle.style.display = "none";
+        lightModeToggle.style.display = "block";
+    } else {
+        darkModeToggle.style.display = "block";
+        lightModeToggle.style.display = "none";
+    }
+}
