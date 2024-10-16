@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family:roboto;
 }
 html{
     scroll-behavior: smooth;
@@ -19,10 +20,13 @@ html{
 .rightnavbar img{
     width: 30px;
 }
+.WelcomeLight{
+    width: 230px;
+}
 .profiel{
-    background-image: url("./assets/v1016-a-09.jpg");
+    background-image: url("./assets/p.jpg");
     background-size: cover;
-    padding: 40px;
+    padding: 140px 0;
 }
 .prf{
     flex: 1;
@@ -60,7 +64,7 @@ html{
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    padding-top: 15px;
+    padding: 50px;
 }
 .aboutme p{
     display: flex;
@@ -70,6 +74,10 @@ html{
     padding: 30px;
     border-radius: 15px;
     background-color: #F1F4F5;
+    font-size: larger;
+}
+.myskills{
+    padding-bottom: 50px ;
 }
 .myskills h1{
     display: flex;
@@ -77,29 +85,49 @@ html{
     justify-content: center;
     margin-bottom: 30px;
     padding-top: 30px;
-
+}
+.skillsIMG{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+.skillsIMG img{
+    width: 200px;
+}
+.textunderimg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .stats{
     margin: 0 auto;
     width: 900px;
     padding-left: 100px;
     margin-bottom: 30px;
-    animation-name: SlideRight;
-    animation-duration: 2s;
+    padding-left: 15px;
 }
-@keyframes SlideRight{
-    from{transform: translateX(-300%);}
-}
+
 .stats2{
     margin: 0 auto;
     width: 900px;
     padding-left: 100px;
-    margin-bottom: 50px;
-    animation-duration: 2s;
-    animation-name: SlideLeft;
+    margin-bottom: px;
+    padding-left: 15px;
 }
-@keyframes SlideLeft{
-    from{transform: translateX(300%);}
+.slide{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    transform: translateX(-200%);
+    transition: transform 1s ease, opacity 1s ease;
+}
+.slide.visible{
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .skills img {width: 150px;
@@ -116,6 +144,9 @@ html{
     flex-direction: column;
     align-items: center;
     gap: 10px;
+}
+.MyProjects{
+    padding: 30px 0;
 }
 .Projectsmain{
     display: flex;
@@ -174,7 +205,8 @@ html{
     border-radius: 25px;
 }
 .box a{
-    color: royalblue;
+    color: black;
+    text-decoration: none;
 }
 img{
     width: 400px;
@@ -185,13 +217,13 @@ html{
     scroll-behavior: smooth;
 }
 .menu{
-    height: 100%; /* 100% Full-height */ /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
+    height: 100%;
+    position: fixed;
     background-color:lightgray;
     width: 0;
-    top: 0; /* Stay at the top */
-    left: 0; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
+    top: 0; 
+    left: 0; 
+    overflow-x: hidden;
     padding-top: 60px; 
     transition: 0.5s; 
 }
@@ -236,7 +268,7 @@ html{
     width: 100%;
     background-color: #f0f0f0;
     border-radius: 10px;
-    margin-bottom: 20px;
+
 }
 
 .bar {
@@ -281,7 +313,9 @@ html{
     align-items: center;
     flex-direction: column;
     gap: 40px;
-    margin: 30px 0;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 30px ;
 }
 .myclients img {
     width: 400px;
@@ -289,8 +323,12 @@ html{
 .clients{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 200px;
+    justify-content: space-evenly;
+    gap: 50px;
+    border: 5px solid #EDF2F6;
+    border-radius: 5px;
+    padding-top: 5px;
+    background-color: #F1F4F5;
 }
 .contactme h1{
     display: flex;
@@ -300,9 +338,7 @@ html{
     padding-bottom: 50px;
 }
 .contactme{
-    /* -image: ubackgroundrl(https://img.freepik.com/free-vector/blue-border-abstract-gradient-background_53876-115744.jpg?t=st=1729002194~exp=1729005794~hmac=579ecb32f06370870ee3bc8f5ffce8184e7021a022749c446d9f906abea2d928&w=1380); */
-    background-size: cover;
-    padding-bottom: 20px;
+    padding: 50px;
 }
 .adress{
     display: flex;
@@ -349,24 +385,25 @@ html{
     border-radius: 10px;
     width: 100px;
     height: 50px;
-    background-color: royalblue;
     color: white;
     box-shadow: 2px 3px black;
 }
 .feedbacks{
     width: 500px;
     height: 200px;
+    border: 2px solid  black;
+    border-radius: 5px;
 }
 .feedbacksbtn button{
     border-radius: 10px;
     width: 100px;
     height: 50px;
-    background-color: royalblue;
+    background-color: black;
     color: white;
     box-shadow: 2px 3px black;
 }
 footer{
-    background-color:royalblue;
+    background-color:white;
     text-align: center;
     padding: 20px;
 }
@@ -374,24 +411,47 @@ footer a{
     text-decoration: none;
     color: white;
     font-size: larger;
-}
-/* light Mode Styles*/
-body {
-    background-color: white;
     color: black;
 }
-
-.container {
-    background-color: #f4f4f4;
+#image {
+    width: 300px;
+    height: 300px;
+    transition: opacity 1s ease-in-out;
 }
+.fade-out {
+    opacity: 0;
+}
+.fade-in {
+    opacity: 1;
+}
+#prevImageBtn{
+    color: white;
+    background-color: black;
+    width: 30px;
+    height: 35px;
+    border-radius: 5px;
+}
+#nextImageBtn{
+    color: white;
+    background-color: black;
+    width: 30px;
+    height: 35px;
+    border-radius: 5px;
+}
+.all{
+    background-image: url(./assets/allbg.jpg    );
+}
+
 
 /* Dark Mode Styles */
 body.dark-mode .navbar {
-    background-color: #BB86FC; /* Dark navbar */
+    transition: background-color 2s;
+    background-color: #76B900; 
 }
 body.dark-mode .featured h4{
-    background-color: #BB86FC;
-    color: #121212;
+    transition: background-color 2s;
+    background-color: #76B900;
+    color: white;
 }
 body.dark-mode .featured h3,
 body.dark-mode .prf,
@@ -400,13 +460,17 @@ body.dark-mode .myskills h1,
 body.dark-mode .MyProjects,
 body.dark-mode .myskills .label,
 body.dark-mode .myclients h1,
-body.dark-mode .contactme h1{
+body.dark-mode .contactme h1,
+body.dark-mode .skillsIMG p,
+body.dark-mode .rows .box h4 a,
+body.dark-mode .navbar,
+body.dark-mode .aboutme p{
     color: white;
 }
 body.dark-mode .profiel{
+    transition: background-image 2s;
     background-image: url("./assets/dark.jpg");
     background-size: cover;
-    padding: 40px;
 }
 body.dark-mode .aboutme,
 body.dark-mode .myskills,
@@ -414,18 +478,43 @@ body.dark-mode .MyProjects,
 body.dark-mode .myclients,
 body.dark-mode .contactme
 {
-    background-color: #1C1F2E;
+    transition: background-color 2s;
+    background-color: #1E1E1E;
 }
-body.dark-mode .aboutme p{
-    background-color:#BB86FC;
+body.dark-mode .aboutme p,
+body.dark-mode footer{
+    transition: background-color 2s;
+    background-color:#76B900;
 }
 body.dark-mode .menu,
 body.dark-mode .menu ul{
-    background-color: black;
+    background-color: #1E1E1E;
+    border: #76B900;
 }
 body.dark-mode .menu li a{
-    color: #03DAC6;
+    color:#76B900 ;
 }
+body.dark-mode .css-bar{
+    background-color: #03DAC6;
+}
+body.dark-mode .html-bar{
+    background-color: #76B900;
+}
+body.dark-mode .python-bar{
+    background-color: #BB86FC;
+}
+body.dark-mode .Js-bar{
+    background-color: #011299;
+}
+body.dark-mode .Mern-bar{
+    background-color: #007F73;
+}
+body.dark-mode .Java-bar{
+    background-color: #7C00FE;
+}
+
+
+
 
 
 
