@@ -1,6 +1,9 @@
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
+}
+html{
+    scroll-behavior: smooth;
 }
 .navbar{
     display: flex;
@@ -17,41 +20,40 @@
     width: 30px;
 }
 .profiel{
-    background-image: url(./assets/v1016-a-09.jpg);
+    background-image: url("./assets/v1016-a-09.jpg");
     background-size: cover;
+    padding: 40px;
 }
 .prf{
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    justify-content: center; 
+    align-content: center;
 }
 .prj{
     display: flex;
-    justify-content: space-between;
 }
 .prj img{
-    width: 500px;
-    height: 400px;
-    border-radius: 50%;
-    margin-left: 50px;
+    flex: 1;
+    width: 200px;
+    border-radius: 100%;
+    padding:0 20px ;
 }
 .featured{
+    flex: 1;
+    margin-right: 10px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     justify-content: center;
-    margin: 30px;
+    
 }
 .featured h4{
-    background-color: #B1B1B1;
+    background-color: #F1F4F5;
     border-radius: 15px;
-    padding: 30px;
+    padding: 20px;
     font-size: large;
-}
-.featured h3{
-    margin-right:  50px;
-    
 }
 .aboutme{
     display: flex;
@@ -67,7 +69,7 @@
     width: 1000px;
     padding: 30px;
     border-radius: 15px;
-    background-color: #B1B1B1;
+    background-color: #F1F4F5;
 }
 .myskills h1{
     display: flex;
@@ -182,13 +184,13 @@ html{
     scroll-behavior: smooth;
 }
 .menu{
-    height: 100%; 
-    position: fixed; 
+    height: 100%; /* 100% Full-height */ /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
     background-color:lightgray;
     width: 0;
-    top: 0; 
-    left: 0; 
-    overflow-x: hidden; 
+    top: 0; /* Stay at the top */
+    left: 0; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; 
     transition: 0.5s; 
 }
@@ -203,7 +205,7 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 60px;
+    gap: 25px;
 }
 .menu ul li a{
     text-decoration: none;
@@ -272,17 +274,6 @@ html{
     background-color: #E87408; 
 }
 .skills img {width: 150px;
-}
-.skills{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
 }
 .myclients{
     display: flex;
@@ -360,4 +351,26 @@ html{
     background-color: royalblue;
     color: white;
     box-shadow: 2px 3px black;
+}
+.feedbacks{
+    width: 500px;
+    height: 200px;
+}
+.feedbacksbtn button{
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: royalblue;
+    color: white;
+    box-shadow: 2px 3px black;
+}
+footer{
+    background-color:royalblue;
+    text-align: center;
+    padding: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
 }

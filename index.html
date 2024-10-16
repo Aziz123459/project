@@ -22,21 +22,20 @@
         <div class="menu" id="mymenu" onmouseover="openmenu('mymenu')" onmouseout="closemenu('mymenu')">
             <img src="./assets/menu-icon.png" alt="menu"  >
             <ul id="list" >
-                <li><a href="#section1">About me</a></li>
-                <li><a href="#section2">My skills</a></li>
-                <li><a href="#section3">My project</a></li>
-                <li><a href="#section4">my clients</a></li>
-                <li><a href="#section5">contact me</a></li>
+                <li><a href="#section1">About Me</a></li>
+                <li><a href="#section2">My Skills</a></li>
+                <li><a href="#section3">My Project</a></li>
+                <li><a href="#section4">My Clients</a></li>
+                <li><a href="#section5">Contact Me</a></li>
             </ul>
         </div>
-        <div class="profiel">
-            <div class="prf">
-                <h2>HELLO! I'm</h2>
-                <h1>Mohamed Aziz Tounsi</h1>
-                <h2>Full Stack Developer</h2>
-                
-            </div>
+        <div class="profiel" id="profile">
             <div class="prj">
+                <div class="prf">
+                    <h2>HELLO! I'm</h2>
+                    <h1>Mohamed Aziz Tounsi</h1>
+                    <h2>Full Stack Developer</h2>
+                </div>
                 <img src="./assets/download.png" alt="">
                 <div class="featured">
                     <h3>
@@ -55,7 +54,7 @@
             
         </div>
         <div class="aboutme">
-            <h1>About me</h1>
+            <h1 id="section1">About me</h1>
             <p>As a passionate junior developer, I bring a solid foundation in front-end and back-end technologies like JavaScript, HTML/CSS, and Python, alongside hands-on experience with frameworks like React and Node.js. Beyond technical skills, I thrive in collaborative environments where clear communication and problem-solving are key. My ability to quickly adapt to new tools, work efficiently in a team, and my eagerness to continuously learn make me an asset for tackling real-world coding challenges. I’m excited to contribute to impactful projects while growing alongside a talented team.</p>
         </div>
             <div class="myskills">
@@ -146,10 +145,11 @@
                     <input class="emailinput" type="text" placeholder="Email">
                 </div>
                 <div class="feedbacksbtn">
-                    <input class="feedbacks" type="text" placeholder="FeedBacks">
+                    <textarea class="feedbacks"  placeholder="FeedBacks"></textarea>
                     <button onclick="TyForFeedBacks()">Submit</button>
                 </div>
             </div>
+            <footer><a href="#profile">Go To The Top</a></footer>
     </div>
     <script src="script.js"></script>
 </body>
