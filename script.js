@@ -39,5 +39,4 @@ function changeImageCard() {
 }
 function TyForFeedBacks(){
     alert("Thank You! For Your FeedBacks");
-
 }
