@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family:roboto;
 }
 html{
     scroll-behavior: smooth;
@@ -19,10 +20,13 @@ html{
 .rightnavbar img{
     width: 30px;
 }
+.WelcomeLight{
+    width: 230px;
+}
 .profiel{
-    background-image: url("./assets/v1016-a-09.jpg");
+    background-image: url("./assets/p.jpg");
     background-size: cover;
-    padding: 40px;
+    padding: 140px 0;
 }
 .prf{
     flex: 1;
@@ -60,7 +64,7 @@ html{
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    padding-top: 15px;
+    padding: 50px;
 }
 .aboutme p{
     display: flex;
@@ -71,13 +75,29 @@ html{
     border-radius: 15px;
     background-color: #F1F4F5;
 }
+.myskills{
+    padding-bottom: 50px ;
+}
 .myskills h1{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
     padding-top: 30px;
-
+}
+.skillsIMG{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+.skillsIMG img{
+    width: 200px;
+}
+.textunderimg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .stats{
     margin: 0 auto;
@@ -86,6 +106,7 @@ html{
     margin-bottom: 30px;
     animation-name: SlideRight;
     animation-duration: 2s;
+    padding-left: 15px;
 }
 @keyframes SlideRight{
     from{transform: translateX(-300%);}
@@ -94,9 +115,10 @@ html{
     margin: 0 auto;
     width: 900px;
     padding-left: 100px;
-    margin-bottom: 50px;
+    margin-bottom: px;
     animation-duration: 2s;
     animation-name: SlideLeft;
+    padding-left: 15px;
 }
 @keyframes SlideLeft{
     from{transform: translateX(300%);}
@@ -115,6 +137,9 @@ html{
     flex-direction: column;
     align-items: center;
     gap: 10px;
+}
+.MyProjects{
+    padding: 30px 0;
 }
 .Projectsmain{
     display: flex;
@@ -173,7 +198,8 @@ html{
     border-radius: 25px;
 }
 .box a{
-    color: royalblue;
+    color: black;
+    text-decoration: none;
 }
 img{
     width: 400px;
@@ -184,13 +210,13 @@ html{
     scroll-behavior: smooth;
 }
 .menu{
-    height: 100%; /* 100% Full-height */ /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
+    height: 100%;
+    position: fixed;
     background-color:lightgray;
     width: 0;
-    top: 0; /* Stay at the top */
-    left: 0; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
+    top: 0; 
+    left: 0; 
+    overflow-x: hidden;
     padding-top: 60px; 
     transition: 0.5s; 
 }
@@ -235,7 +261,7 @@ html{
     width: 100%;
     background-color: #f0f0f0;
     border-radius: 10px;
-    margin-bottom: 20px;
+
 }
 
 .bar {
@@ -280,7 +306,9 @@ html{
     align-items: center;
     flex-direction: column;
     gap: 40px;
-    margin: 30px 0;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 30px ;
 }
 .myclients img {
     width: 400px;
@@ -288,8 +316,13 @@ html{
 .clients{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 200px;
+    justify-content: space-evenly;
+    gap: 50px;
+    border: 5px solid #EDF2F6;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 2px #EDF2F6;
+    padding-top: 5px;
+    background-color: #F1F4F5;
 }
 .contactme h1{
     display: flex;
@@ -299,9 +332,7 @@ html{
     padding-bottom: 50px;
 }
 .contactme{
-    background-image: url(https://img.freepik.com/free-vector/blue-border-abstract-gradient-background_53876-115744.jpg?t=st=1729002194~exp=1729005794~hmac=579ecb32f06370870ee3bc8f5ffce8184e7021a022749c446d9f906abea2d928&w=1380);
-    background-size: cover;
-    padding-bottom: 20px;
+    padding: 50px;
 }
 .adress{
     display: flex;
@@ -348,24 +379,25 @@ html{
     border-radius: 10px;
     width: 100px;
     height: 50px;
-    background-color: royalblue;
     color: white;
     box-shadow: 2px 3px black;
 }
 .feedbacks{
     width: 500px;
     height: 200px;
+    border: 2px solid  black;
+    border-radius: 5px;
 }
 .feedbacksbtn button{
     border-radius: 10px;
     width: 100px;
     height: 50px;
-    background-color: royalblue;
+    background-color: black;
     color: white;
     box-shadow: 2px 3px black;
 }
 footer{
-    background-color:royalblue;
+    background-color:white;
     text-align: center;
     padding: 20px;
 }
@@ -373,4 +405,33 @@ footer a{
     text-decoration: none;
     color: white;
     font-size: larger;
+    color: black;
+}
+#image {
+    width: 300px;
+    height: 300px;
+    transition: opacity 1s ease-in-out;
+}
+.fade-out {
+    opacity: 0;
+}
+.fade-in {
+    opacity: 1;
+}
+#prevImageBtn{
+    color: white;
+    background-color: black;
+    width: 30px;
+    height: 35px;
+    border-radius: 5px;
+}
+#nextImageBtn{
+    color: white;
+    background-color: black;
+    width: 30px;
+    height: 35px;
+    border-radius: 5px;
+}
+.all{
+    background-image: url(./assets/allbg.jpg    );
 }

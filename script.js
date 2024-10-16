@@ -1,8 +1,7 @@
-/* Set the width of the side navigation to 250px */
+
 function openmenu() {
     document.getElementById("mymenu").style.width = "200px";
 }
-/* Set the width of the side navigation to 0 */
 function closemenu() {
     document.getElementById("mymenu").style.width = "0";
 }
@@ -39,4 +38,45 @@ function changeImageCard() {
 }
 function TyForFeedBacks(){
     alert("Thank You! For Your FeedBacks");
+}
+
+
+
+var imgElement = document.getElementById('image');
+var nextImageBtn = document.getElementById('nextImageBtn');
+var prevImageBtn = document.getElementById('prevImageBtn');
+
+var currentImageSrc = imgElement.src;
+var previousImageSrc = './assets/megapc.webp';
+
+nextImageBtn.addEventListener('click', function() {
+previousImageSrc = currentImageSrc; 
+currentImageSrc = './assets/ba9chich.svg';
+fadeImage(currentImageSrc);
+prevImageBtn.disabled = false; 
+});
+
+
+prevImageBtn.addEventListener('click', function() {
+fadeImage(previousImageSrc);
+
+
+var tempSrc = currentImageSrc;
+currentImageSrc = previousImageSrc;
+previousImageSrc = tempSrc;
+
+if (!previousImageSrc) {
+    prevImageBtn.disabled = true; 
+}
+});
+
+
+function fadeImage(newSrc) {
+imgElement.classList.add('fade-out');
+
+setTimeout(function() {
+    imgElement.src = newSrc;
+    imgElement.classList.remove('fade-out');
+    imgElement.classList.add('fade-in');
+}, 1000);
 }

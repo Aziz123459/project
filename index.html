@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
 </head>
 <body>
     <div class="container">
@@ -14,6 +17,7 @@
                 <a href="https://github.com/med-mokhtar-nasrali"><img src="./assets/github.png" alt="github"></a>
                 <a href="#"><img src="./assets/link_icon.png" alt="link"></a>
             </div>
+            <img class="WelcomeLight" src="./assets/WelcomeLight.jpg" alt="welcome">
             <div class="rightnavbar">
                 <img src="./assets/darkmode_icon.png" alt="darkmode">
                 <img src="./assets/lightmode_icon.png" alt="lightmode">
@@ -53,102 +57,124 @@
             </div>
             
         </div>
-        <div class="aboutme">
-            <h1 id="section1">About me</h1>
-            <p>As a passionate junior developer, I bring a solid foundation in front-end and back-end technologies like JavaScript, HTML/CSS, and Python, alongside hands-on experience with frameworks like React and Node.js. Beyond technical skills, I thrive in collaborative environments where clear communication and problem-solving are key. My ability to quickly adapt to new tools, work efficiently in a team, and my eagerness to continuously learn make me an asset for tackling real-world coding challenges. I’m excited to contribute to impactful projects while growing alongside a talented team.</p>
-        </div>
-            <div class="myskills">
-                <h1 id="section2">My Skills</h1>
-                    <div class="stats">     
-                        <div class="label">CSS <span style="float: right;">90%</span></div>
-                        <div class="bar-container">
-                            <div class="bar css-bar">90%</div>
-                        </div>
-                
-                        <div class="label">HTML5 <span style="float: right;">85%</span></div>
-                        <div class="bar-container">
-                            <div class="bar html-bar">85%</div>
-                        </div>
-                
-                        <div class="label">Python <span style="float: right;">50%</span></div>
-                        <div class="bar-container">
-                            <div class="bar python-bar">50%</div>
-                        </div>
-                    </div>
-                    <div class="stats2">     
-                        <div class="label">JS <span style="float: right;">90%</span></div>
-                        <div class="bar-container">
-                            <div class="bar Js-bar">90%</div>
-                        </div>
-                
-                        <div class="label">Mern <span style="float: right;">85%</span></div>
-                        <div class="bar-container">
-                            <div class="bar Mern-bar">85%</div>
-                        </div>
-                
-                        <div class="label">Java <span style="float: right;">50%</span></div>
-                        <div class="bar-container">
-                            <div class="bar Java-bar">50%</div>
-                        </div>
-                    </div>
+        <div class="all">
+            <div class="aboutme">
+                <h1 id="section1">About me</h1>
+                <p>As a passionate junior developer, I bring a solid foundation in front-end and back-end technologies like JavaScript, HTML/CSS, and Python, alongside hands-on experience with frameworks like React and Node.js. Beyond technical skills, I thrive in collaborative environments where clear communication and problem-solving are key. My ability to quickly adapt to new tools, work efficiently in a team, and my eagerness to continuously learn make me an asset for tackling real-world coding challenges. I’m excited to contribute to impactful projects while growing alongside a talented team.</p>
             </div>
-            <div class="MyProjects">
-                <div class="title">    
-                    <h1 id="section3">My Projects</h1>
-                    <h3>Previous Projects</h3>
+                <div class="myskills">
+                    <h1 id="section2">My Skills</h1>
+                        <div class="skillsIMG">
+                            <div class="textunderimg">
+                            <img src="./assets/illustration.png" alt="illustration">
+                            <p>Keeping it simple. Centered on <br> content and functionality.</p>
+                            </div>
+                            <div class="textunderimg">
+                            <img src="./assets/debugging.png" alt="debug">
+                            <p>Creative approach to research,<br> analysis and decision making.</p>
+                            </div>
+                            <div class="textunderimg">
+                            <img src="./assets/programming.png" alt="coding">
+                            <p>My goals are to focus on clean code <br>and newest technologies.</p>
+                            </div>
+                        </div>
+                        <div class="stats">     
+                            <div class="label">CSS <span style="float: right;">90%</span></div>
+                            <div class="bar-container">
+                                <div class="bar css-bar">90%</div>
+                            </div>
+                    
+                            <div class="label">HTML5 <span style="float: right;">85%</span></div>
+                            <div class="bar-container">
+                                <div class="bar html-bar">85%</div>
+                            </div>
+                    
+                            <div class="label">Python <span style="float: right;">50%</span></div>
+                            <div class="bar-container">
+                                <div class="bar python-bar">50%</div>
+                            </div>
+                        </div>
+                        <div class="stats2">     
+                            <div class="label">JS <span style="float: right;">90%</span></div>
+                            <div class="bar-container">
+                                <div class="bar Js-bar">90%</div>
+                            </div>
+                    
+                            <div class="label">Mern <span style="float: right;">85%</span></div>
+                            <div class="bar-container">
+                                <div class="bar Mern-bar">85%</div>
+                            </div>
+                    
+                            <div class="label">Java <span style="float: right;">50%</span></div>
+                            <div class="bar-container">
+                                <div class="bar Java-bar">50%</div>
+                            </div>
+                        </div>
                 </div>
-                <div class="Projectsmain">
-                    <div class="rows">
-                        <div class="box">
-                            <img onclick="changeImageWeather()" id="weather" src="./assets/DojoWeather.png" alt="project">
-                            <h4><a href="https://github.com/med-mokhtar-nasrali/Web-Fundamentals/tree/main/Week_2/Day_2/Practice/DojoWeather">DojoWeather</a></h4>
-                        </div>
-                        <div class="box">
-                            <img onclick="changeImageConnections()" id="connections" src="./assets/MakingConnections.png" alt="project">
-                            <h4><a href="https://github.com/med-mokhtar-nasrali/Web-Fundamentals/tree/main/Week_2/Day_2/Practice/Making_Connections">Making Connections</a></h4>
-                        </div>
-                        <div class="box">
-                            <img onclick="changeImageLikes()" id="Likes" src="./assets/Likes.png" alt="project">
-                            <h4><a href="https://github.com/med-mokhtar-nasrali/Web-Fundamentals/tree/main/Week_2/Day_1/Core/Likes/Part_2">Likes</a></h4>
-                        </div>            
+                <div class="MyProjects">
+                    <div class="title">    
+                        <h1 id="section3">My Projects</h1>
+                        <h3>Previous Projects</h3>
                     </div>
-                    <div class="rows">
+                    <div class="Projectsmain">
+                        <div class="rows">
                             <div class="box">
-                                <img onclick="changeImageVideo()" id="Vid" src="./assets/VideoPreview.png" alt="project">
-                                <h4><a href="https://github.com/med-mokhtar-nasrali/Web-Fundamentals/tree/main/Week_2/Day_1/Practice/Video%20Preview">Video Preview</a></h4>
+                                <img onclick="changeImageWeather()" id="weather" src="./assets/DojoWeather.png" alt="project">
+                                <h4><a href="https://github.com/med-mokhtar-nasrali/Web-Fundamentals/tree/main/Week_2/Day_2/Practice/DojoWeather">DojoWeather</a></h4>
                             </div>
                             <div class="box">
-                                <img onclick="changeImageProfile()" id="ProfileIMG" src="./assets/ProfilePage.png" alt="project">
-                                <h4><a href="https://github.com/med-mokhtar-nasrali/Web-Fundamentals/tree/main/Week_1/Day_4/Core/ProfilePage">Profile Page</a></h4>
+                                <img onclick="changeImageConnections()" id="connections" src="./assets/MakingConnections.png" alt="project">
+                                <h4><a href="https://github.com/med-mokhtar-nasrali/Web-Fundamentals/tree/main/Week_2/Day_2/Practice/Making_Connections">Making Connections</a></h4>
                             </div>
                             <div class="box">
-                                <img onclick="changeImageCard()" id="CardIMG" src="./assets/UserCard.png" alt="project">
-                                <h4><a href="https://github.com/med-mokhtar-nasrali/Web-Fundamentals/tree/main/Week_1/Day_4/Practice/User%20Card">User Card</a></h4>
-                            </div>          
+                                <img onclick="changeImageLikes()" id="Likes" src="./assets/Likes.png" alt="project">
+                                <h4><a href="https://github.com/med-mokhtar-nasrali/Web-Fundamentals/tree/main/Week_2/Day_1/Core/Likes/Part_2">Likes</a></h4>
+                            </div>            
+                        </div>
+                        <div class="rows">
+                                <div class="box">
+                                    <img onclick="changeImageVideo()" id="Vid" src="./assets/VideoPreview.png" alt="project">
+                                    <h4><a href="https://github.com/med-mokhtar-nasrali/Web-Fundamentals/tree/main/Week_2/Day_1/Practice/Video%20Preview">Video Preview</a></h4>
+                                </div>
+                                <div class="box">
+                                    <img onclick="changeImageProfile()" id="ProfileIMG" src="./assets/ProfilePage.png" alt="project">
+                                    <h4><a href="https://github.com/med-mokhtar-nasrali/Web-Fundamentals/tree/main/Week_1/Day_4/Core/ProfilePage">Profile Page</a></h4>
+                                </div>
+                                <div class="box">
+                                    <img onclick="changeImageCard()" id="CardIMG" src="./assets/UserCard.png" alt="project">
+                                    <h4><a href="https://github.com/med-mokhtar-nasrali/Web-Fundamentals/tree/main/Week_1/Day_4/Practice/User%20Card">User Card</a></h4>
+                                </div>          
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="myclients">
-                <h1 id="section4">My Clients</h1>
-                <div class="clients">
-                <a href="https://www.orange.tn/"><img src="./assets/orange.png" alt="orange"></a>
-                <a href="https://ba9chich.com/"><img src="./assets/ba9chich.svg" alt="ba9chich"></a>
-            </div>
-            </div>
-            <div class="contactme">
-                <h1 id="section5">Contact Me</h1>
-                <div class="adress">
-                    <div class="name-lastname">
-                        <input class="name" type="text" placeholder="Name">
-                        <input class="lastname" type="text" placeholder="Last Name">
+                <div class="myclients">
+                    <h1 id="section4">My Clients</h1>
+                    <div class="clients">
+                        
+                        <button id="prevImageBtn" disabled>&#10094</button>
+                        <img id="image" src="./assets/megapc.webp" alt="Placeholder Image">
+                            <br>
+                        <button id="nextImageBtn">&#10095</button>
+                        
+                        
                     </div>
-                    <input class="emailinput" type="text" placeholder="Email">
+                    
                 </div>
-                <div class="feedbacksbtn">
-                    <textarea class="feedbacks"  placeholder="FeedBacks"></textarea>
-                    <button onclick="TyForFeedBacks()">Submit</button>
+                <div class="contactme">
+                    <h1 id="section5">Contact Me</h1>
+                    <div class="adress">
+                        <div class="name-lastname">
+                            <input class="name" type="text" placeholder="Name">
+                            <input class="lastname" type="text" placeholder="Last Name">
+                        </div>
+                        <input class="emailinput" type="text" placeholder="Email">
+                    </div>
+                    <div class="feedbacksbtn">
+                        <textarea class="feedbacks"  placeholder="FeedBacks"></textarea>
+                        <button onclick="TyForFeedBacks()">Submit</button>
+                    </div>
                 </div>
-            </div>
+            </div>    
             <footer><a href="#profile">Go To The Top</a></footer>
     </div>
     <script src="script.js"></script>
