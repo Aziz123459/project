@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+.all{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #070505;
+    padding:10px;
+    align-items: center;
+    padding-left: 170px;
+}
+.navig{
+    display: flex;
+}
+.navtitle{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+.navlink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    background-color:#17A2B8;
+    box-shadow: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90px;
+    height: 30px;
+    font-size: large;
+    color: white;
+}
+.UserCard{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left: 550px;
+    top: 40px;
+}
+.location{
+    display: flex;
+    position: relative;
+    top: 20px;
+    width: 10px;
+}
+
+li{
+    display: flex;
+    color: #333333;
+    text-decoration: none;
+    padding-right: 20px;
+}
+a{
+    color: rgb(160, 157, 157);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Tag{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+ul{
+    padding-left: 40px;
+}
+.L1{
+    width: 500px;
+    height: 100px;
+    background-color: #17A2B8;
+}
+.L2{
+    width: 494px;
+    height: 250px;
+    background-color:white;
+    border: solid rgb(236,235,232);
+}
+img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.Pic{
+    position:relative;
+    top: 44px;
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    border-radius:100% ;
+    border: solid rgb(236,235,232);
+}
+.Settings{
+    display: flex;
+    position: relative;
+    top: 60px;
+}
+.column{
+    position: relative;
+    top: 50px;
+    left: 20px;
+} 
+span{
+    font-size:medium;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 100%;
+    background-color: grey;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+.edit{
+    color: #085394;
+    text-decoration: underline;
+    
+}
+.CV{
+    position: relative;
+    left: 550px;
+    bottom: 80px;
+    width: 494px;
+    height: 100px;
+    background-color:white;
+    border: solid rgb(236,235,232);
+}
+.Request{
+    position: relative;
+    left: 1135px;
+    bottom: 565px;
+    width: 300px;
+    height: auto;
+    background-color:white;
+    border: solid rgb(236,235,232);
+}
+.Con{
+    position: relative;
+    left: 1135px;
+    bottom: 545px;
+    width: 300px;
+    height: auto;
+    background-color:white;
+    border: solid rgb(236,235,232);
+}
+.Level{
+    background-color: #0a0a0a;
+}
+.Bio{
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+.l1{
+    font-weight:bold;
+}
+.List{
+    background-color: #0a0a0a;
+    display: flex;
+}
+.account{
+    position: relative;
+    left: 100px;
+    height: 30px;
+    width: 30px;
+}
+.account1{
+    position: relative;
+    left: 90px;
+    height: 30px;
+    width: 30px;
+    
+}
+.Deny{
+    position: relative;
+    left:100px ;
+    height: 30px;
+    width: 30px;
+}
+.Deny1{
+    position: relative;
+    left:90px ;
+    height: 30px;
+    width: 30px;
+    padding-right: 10px;
+}
+.names{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.tech{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+h2{
+    color: white;
+    margin-left: 20px;
+}
+h4{
+    color: #085394;
+    text-decoration: underline;
+    margin:10px;
+}
+p{
+    position: relative;
+    top: 40px;
+    font-size:large;
+}
+

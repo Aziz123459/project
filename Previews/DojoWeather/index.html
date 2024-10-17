@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h1>DojoWeather</h1>
+            <div class="navitems">
+                <ul>
+                    <li onclick="showAlert(this)">Burbank</li>
+                    <li>Chicago</li>
+                    <li>Dallas</li>
+                </ul>    
+            </div>
+        </div>    
+            <div class="main">
+                <div class="topmain">
+                    <h2>San Jose</h2>
+                    <div class="tempcontrol">
+                        <p>show temperature in</p>
+                        <select name="CorF" class="border" onchange="changer('.border')">
+                            <option value="celsius">°C</option>
+                            <option value="fahrenheit">°F</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="weatherstats">
+                    <div class="block">
+                        <h3>Today</h3>
+                        <img src="./images/some_rain.png" alt="rainy">
+                        <p>some rain</p>
+                        <div class="degrees">
+                            <h3 id="degree1">24°</h3>
+                            <h3 id="degree2">18°</h3>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <h3>Tomorrow</h3>
+                        <img src="./images/some_sun.png" alt="sun">
+                        <p>some sun</p>
+                        <div class="degrees">
+                            <h3 id="degree3">27°</h3>
+                            <h3 id="degree4">19°</h3>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <h3>Friday</h3>
+                        <img src="./images/some_clouds.png" alt="clouds">
+                        <p>some clouds</p>
+                        <div class="degrees">
+                            <h3 id="degree5">21°</h3>
+                            <h3 id="degree6">16°</h3>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <h3>Saturday</h3>
+                        <img src="./images/some_sun.png" alt="sun">
+                        <p>some sun</p>
+                        <div class="degrees">
+                            <h3 id="degree7">26°</h3>
+                            <h3 id="degree8">21°</h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="me" class="cookies">
+                    <div class="image">
+                        <img src="./images/cookie.png" alt="cookie">
+                    </div>
+                    <div class="cookiesp">
+                        <h4>Stop! Cookie time</h4>
+                        <p>We use cookies (sadly not the edible ones) to personalize <br>
+                        content and ads, to provide social media features and to <br>
+                        analyse our traffic. <a href="#">Read more...</a></p>
+                    </div>
+                    <button onclick="removeE()">I Accept</button>
+                </div>
+            </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -40,29 +40,30 @@ function TyForFeedBacks(){
     alert("Thank You! For Your FeedBacks");
 }
 
-var allImg = ['./assets/megapc.webp', './assets/ba9chich.svg','./assets/orange.png','./assets/Mytek.png'];
+var allImg = ['./assets/megapc.webp', './assets/ba9chich.svg', './assets/orange.png', './assets/Mytek.png'];
 var currentIndex = 0;
+
 function switchImg() {
-    var next = document.getElementById('image');
-    currentIndex = (currentIndex + 1) % allImg.length;
-    next.src = allImg[currentIndex];
+    changeImage(1);  // Move to the next image
 }
+
 function previousImg() {
-    var next = document.getElementById('image');
-    currentIndex = (currentIndex - 1 + allImg.length) % allImg.length;
-    next.src = allImg[currentIndex];
+    changeImage(-1);  // Move to the previous image
 }
 
-function fadeImage(newSrc) {
-imgElement.classList.add('fade-out');
-
-setTimeout(function() {
-    imgElement.src = newSrc;
-    imgElement.classList.remove('fade-out');
-    imgElement.classList.add('fade-in');
-}, 1000);
+function changeImage(direction) {
+    var imgElement = document.getElementById('image');
+    imgElement.classList.add('fade-out');
+    setTimeout(function() {
+        currentIndex = (currentIndex + direction + allImg.length) % allImg.length;
+        imgElement.src = allImg[currentIndex];
+        imgElement.classList.remove('fade-out');
+        imgElement.classList.add('fade-in');
+        setTimeout(function() {
+            imgElement.classList.remove('fade-in');
+        }, 500); 
+    }, 500);
 }
-
 function toggleDarkMode() {
     const body = document.body;
     const darkModeToggle = document.getElementById("darkModeToggle");
