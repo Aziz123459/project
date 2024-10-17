@@ -36,6 +36,7 @@ html{
     align-items: center;
     justify-content: center; 
     align-content: center;
+    font-size: x-large;
 }
 .prj{
     display: flex;
@@ -252,13 +253,12 @@ html{
 }
 .menu ul li a:hover{
     text-decoration: underline;
-    text-decoration-color: royalblue;
+    text-decoration-color: black;
 }
 .menu img{
     width: 20px;
-    margin-left: 10px;
-    margin-bottom: 10px;
     position: fixed;
+    top: 22px;
 }
 .myskills h1{
     display: flex;
@@ -490,7 +490,7 @@ body.dark-mode .adress{
 }
 body.dark-mode .menu img{
     background-color: lightgray;
-    border-radius: 30%;
+    border-radius: 5px;
 }
 
 
