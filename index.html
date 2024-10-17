@@ -17,10 +17,10 @@
                 <a href="https://github.com/med-mokhtar-nasrali"><img src="./assets/github.png" alt="github"></a>
                 <a href="#"><img src="./assets/link_icon.png" alt="link"></a>
             </div>
-            <img class="WelcomeLight" src="./assets/WelcomeLight.jpg" alt="welcome">
+            <h1>WELCOME</h1>
             <div class="rightnavbar">
-                <img src="./assets/darkmode_icon.png" alt="darkmode">
-                <img src="./assets/lightmode_icon.png" alt="lightmode">
+                <img src="./assets/darkmode_icon.png" alt="darkmode" id="darkModeToggle" onclick="toggleDarkMode()">
+                <img src="./assets/lightmode_icon.png" alt="lightmode" id="lightModeToggle" onclick="toggleDarkMode()" style="display: none;">
             </div>
         </div>
         <div class="menu" id="mymenu" onmouseover="openmenu('mymenu')" onmouseout="closemenu('mymenu')">
@@ -78,36 +78,38 @@
                             <p>My goals are to focus on clean code <br>and newest technologies.</p>
                             </div>
                         </div>
-                        <div class="stats">     
-                            <div class="label">CSS <span style="float: right;">90%</span></div>
-                            <div class="bar-container">
-                                <div class="bar css-bar">90%</div>
+                        <div class="slide" id="slidebox">
+                            <div class="stats" id="slidebox1">     
+                                <div class="label">CSS <span style="float: right;">90%</span></div>
+                                <div class="bar-container">
+                                    <div class="bar css-bar">90%</div>
+                                </div>
+                        
+                                <div class="label">HTML5 <span style="float: right;">85%</span></div>
+                                <div class="bar-container">
+                                    <div class="bar html-bar">85%</div>
+                                </div>
+                        
+                                <div class="label">Python <span style="float: right;">50%</span></div>
+                                <div class="bar-container">
+                                    <div class="bar python-bar">50%</div>
+                                </div>
                             </div>
-                    
-                            <div class="label">HTML5 <span style="float: right;">85%</span></div>
-                            <div class="bar-container">
-                                <div class="bar html-bar">85%</div>
-                            </div>
-                    
-                            <div class="label">Python <span style="float: right;">50%</span></div>
-                            <div class="bar-container">
-                                <div class="bar python-bar">50%</div>
-                            </div>
-                        </div>
-                        <div class="stats2">     
-                            <div class="label">JS <span style="float: right;">90%</span></div>
-                            <div class="bar-container">
-                                <div class="bar Js-bar">90%</div>
-                            </div>
-                    
-                            <div class="label">Mern <span style="float: right;">85%</span></div>
-                            <div class="bar-container">
-                                <div class="bar Mern-bar">85%</div>
-                            </div>
-                    
-                            <div class="label">Java <span style="float: right;">50%</span></div>
-                            <div class="bar-container">
-                                <div class="bar Java-bar">50%</div>
+                            <div class="stats2" id="slidebox2">     
+                                <div class="label">JS <span style="float: right;">90%</span></div>
+                                <div class="bar-container">
+                                    <div class="bar Js-bar">90%</div>
+                                </div>
+                        
+                                <div class="label">Mern <span style="float: right;">85%</span></div>
+                                <div class="bar-container">
+                                    <div class="bar Mern-bar">85%</div>
+                                </div>
+                        
+                                <div class="label">Java <span style="float: right;">50%</span></div>
+                                <div class="bar-container">
+                                    <div class="bar Java-bar">50%</div>
+                                </div>
                             </div>
                         </div>
                 </div>
@@ -150,7 +152,6 @@
                 <div class="myclients">
                     <h1 id="section4">My Clients</h1>
                     <div class="clients">
-                        
                         <button onclick="previousImg()" >&#10094</button>
                         <img id="image" src="./assets/megapc.webp" alt="Placeholder Image">
                             <br>

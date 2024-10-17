@@ -53,20 +53,6 @@ function previousImg() {
     next.src = allImg[currentIndex];
 }
 
-prevImageBtn.addEventListener('click', function() {
-fadeImage(previousImageSrc);
-
-
-var tempSrc = currentImageSrc;
-currentImageSrc = previousImageSrc;
-previousImageSrc = tempSrc;
-
-if (!previousImageSrc) {
-    prevImageBtn.disabled = true; 
-}
-});
-
-
 function fadeImage(newSrc) {
 imgElement.classList.add('fade-out');
 
@@ -76,3 +62,33 @@ setTimeout(function() {
     imgElement.classList.add('fade-in');
 }, 1000);
 }
+
+function toggleDarkMode() {
+    const body = document.body;
+    const darkModeToggle = document.getElementById("darkModeToggle");
+    const lightModeToggle = document.getElementById("lightModeToggle");
+
+    body.classList.toggle("dark-mode");
+
+    
+    if (body.classList.contains("dark-mode")) {
+        darkModeToggle.style.display = "none";
+        lightModeToggle.style.display = "block";
+    } else {
+        darkModeToggle.style.display = "block";
+        lightModeToggle.style.display = "none";
+    }
+}
+var slidebox = document.getElementById('slidebox')
+function checkslide(){
+var boxposition = slidebox.getBoundingClientRect().top;
+var screenposition = window.innerHeight;
+if (boxposition<screenposition){
+    slidebox.classList.add('visible');
+}
+}
+
+window.addEventListener('scroll', checkslide);
+
+
+checkslide();

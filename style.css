@@ -74,6 +74,7 @@ html{
     padding: 30px;
     border-radius: 15px;
     background-color: #F1F4F5;
+    font-size: larger;
 }
 .myskills{
     padding-bottom: 50px ;
@@ -104,25 +105,31 @@ html{
     width: 900px;
     padding-left: 100px;
     margin-bottom: 30px;
-    animation-name: SlideRight;
-    animation-duration: 2s;
     padding-left: 15px;
 }
-@keyframes SlideRight{
-    from{transform: translateX(-300%);}
-}
+
 .stats2{
     margin: 0 auto;
     width: 900px;
     padding-left: 100px;
     margin-bottom: px;
-    animation-duration: 2s;
-    animation-name: SlideLeft;
     padding-left: 15px;
 }
-@keyframes SlideLeft{
-    from{transform: translateX(300%);}
+.slide{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    transform: translateX(-200%);
+    transition: transform 1s ease, opacity 1s ease;
 }
+.slide.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .skills img {width: 150px;
 }
 .skills{
@@ -313,7 +320,6 @@ html{
     gap: 50px;
     border: 5px solid #EDF2F6;
     border-radius: 5px;
-    box-shadow: 5px 5px 5px 2px #EDF2F6;
     padding-top: 5px;
     background-color: #F1F4F5;
 }
@@ -340,11 +346,7 @@ html{
     width: 500px;
     margin: 0 auto;
 }
-.name-lastname{
-    display: flex;
-    gap: 30px;
-    height: 40px;
-}
+
 footer{
     background-color:white;
     text-align: center;
@@ -410,3 +412,83 @@ button:hover {
     margin-top: 10px;
     color: green;
 }
+
+
+/* Dark Mode Styles */
+body.dark-mode .navbar {
+    transition: background-color 2s;
+    background-color: #76B900; 
+}
+body.dark-mode .featured h4{
+    transition: background-color 2s;
+    background-color: #76B900;
+    color: white;
+}
+body.dark-mode .featured h3,
+body.dark-mode .prf,
+body.dark-mode .aboutme h1,
+body.dark-mode .myskills h1,
+body.dark-mode .MyProjects,
+body.dark-mode .myskills .label,
+body.dark-mode .myclients h1,
+body.dark-mode .contactme h1,
+body.dark-mode .skillsIMG p,
+body.dark-mode .rows .box h4 a,
+body.dark-mode .navbar,
+body.dark-mode .aboutme p{
+    color: white;
+}
+body.dark-mode .profiel{
+    transition: background-image 2s;
+    background-image: url("./assets/dark.jpg");
+    background-size: cover;
+}
+body.dark-mode .aboutme,
+body.dark-mode .myskills,
+body.dark-mode .MyProjects,
+body.dark-mode .myclients,
+body.dark-mode .contactme
+{
+    transition: background-color 2s;
+    background-color: #1E1E1E;
+}
+body.dark-mode .aboutme p,
+body.dark-mode footer{
+    transition: background-color 2s;
+    background-color:#76B900;
+}
+body.dark-mode .menu,
+body.dark-mode .menu ul{
+    background-color: #1E1E1E;
+    border: #76B900;
+}
+body.dark-mode .menu li a{
+    color:#76B900 ;
+}
+body.dark-mode .css-bar{
+    background-color: #03DAC6;
+}
+body.dark-mode .html-bar{
+    background-color: #76B900;
+}
+body.dark-mode .python-bar{
+    background-color: #BB86FC;
+}
+body.dark-mode .Js-bar{
+    background-color: #011299;
+}
+body.dark-mode .Mern-bar{
+    background-color: #007F73;
+}
+body.dark-mode .Java-bar{
+    background-color: #7C00FE;
+}
+
+
+
+
+
+
+
+
+
