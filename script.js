@@ -5,7 +5,6 @@ function openmenu() {
 function closemenu() {
     document.getElementById("mymenu").style.width = "0";
 }
-
 function changeImageWeather() {
     var image = document.getElementById('weather');
     image.src = './assets/DojoWeatherResult.png';
@@ -36,21 +35,14 @@ function changeImageCard() {
     image.src = './assets/UserCardResult.png';
     image.style.width ='400px';
 }
-function TyForFeedBacks(){
-    alert("Thank You! For Your FeedBacks");
-}
-
 var allImg = ['./assets/megapc.webp', './assets/ba9chich.svg', './assets/orange.png', './assets/Mytek.png'];
 var currentIndex = 0;
-
 function switchImg() {
-    changeImage(1);  // Move to the next image
+    changeImage(1);
 }
-
 function previousImg() {
-    changeImage(-1);  // Move to the previous image
+    changeImage(-1);
 }
-
 function changeImage(direction) {
     var imgElement = document.getElementById('image');
     imgElement.classList.add('fade-out');
@@ -68,10 +60,8 @@ function toggleDarkMode() {
     const body = document.body;
     const darkModeToggle = document.getElementById("darkModeToggle");
     const lightModeToggle = document.getElementById("lightModeToggle");
-
-    body.classList.toggle("dark-mode");
-
     
+    body.classList.toggle("dark-mode");
     if (body.classList.contains("dark-mode")) {
         darkModeToggle.style.display = "none";
         lightModeToggle.style.display = "block";
@@ -90,6 +80,20 @@ if (boxposition<screenposition){
 }
 
 window.addEventListener('scroll', checkslide);
-
-
 checkslide();
+
+
+
+const form = document.getElementById('contactForm');
+form.addEventListener('submit', function(e) {
+
+const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+    if (!hCaptcha) {
+        e.preventDefault();
+        alert("Please fill out captcha field")
+        return
+    }
+    else {
+        alert("Thank You! For Your FeedBacks");
+    }
+});
